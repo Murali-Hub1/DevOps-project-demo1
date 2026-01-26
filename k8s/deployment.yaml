@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: projectdemo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: projectdemo
+  template:
+    metadata:
+      labels:
+        app: projectdemo
+    spec:
+      containers:
+      - name: projectdemo
+        image: projectdemo1acr.azurecr.io/projectdemo:latest
+        ports:
+        - containerPort: 3000
