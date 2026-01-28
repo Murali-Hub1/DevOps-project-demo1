@@ -175,7 +175,3 @@ exec /usr/local/bin/docker-entrypoint.sh: exec format error
 * Production-style DevOps workflow implemented
 
 ---
-
-**Author:** Murali
-
-**Purpose:** DevOps learning, portfolio, and interview preparation
